@@ -61,9 +61,7 @@ const Predict = () => {
         This is react app and is connected to flask in the backend which has ML
         model
       </p>
-      <p className="desc">
-        Testing flask react with ML (LinearRegression)
-      </p>
+      <p className="desc">Testing flask react with ML (LinearRegression)</p>
       <form onSubmit={formSubmitHandler}>
         <input
           type="number"
@@ -88,9 +86,10 @@ const Predict = () => {
         {data && (
           <>
             <p className="predicted-data">
-              The predicted data is <strong>{data?.prediction}</strong>
+              The predicted data is <strong>{data?.prediction} lpa </strong>
               <br></br>
-              The accuracy is <strong>{data?.accuracy}</strong>
+              The accuracy is
+              <strong>{data?.accuracy} %</strong>
             </p>
           </>
         )}
